@@ -79,7 +79,7 @@ export const NextButton: React.FC<PropType> = (props) => {
 
   return (
     <button
-      className="embla__button embla__button--next"
+      className="theme-light embla__button embla__button--next"
       type="button"
       {...restProps}
     >
