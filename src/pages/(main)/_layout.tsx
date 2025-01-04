@@ -1,5 +1,5 @@
 import { Stack, Button, Image, Text, Show, chakra } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
@@ -24,19 +24,20 @@ const NavBarData = [
 ];
 
 // in case chakranya error karena stack propsnya gaada
-// const MotionStack = motion(chakra(Stack));
+const MotionStack = motion(chakra(Stack));
 
 const MainLayoutDesktop = () => {
   return (
     <>
       {/* <MotionStack> di ganti ini nanti Stacknya, sama motion.div diilangin aja */}
-      <Stack
-        as={motion.div}
+      <MotionStack
+        // as={motion.div}
         direction={"row"}
         justifyContent={"center"}
         zIndex={30}
         position={"absolute"}
         pt={10}
+        px={"10rem"}
         minW={"100vw"}
         // minH={"100vh"}
         flex={1}
@@ -62,11 +63,11 @@ const MainLayoutDesktop = () => {
           bgColor={"rgba(255, 255, 255, 0.85)"}
           // p={5}
           py={{ lg: 4, xl: 4 }}
-          pl={{ lg: 5, xl: 2 }}
+          pl={{ lg: 5, xl: 4 }}
           pr={{ lg: 4, xl: 6 }}
           direction={"row"}
           alignItems={"center"}
-          justifyContent={"space-around"}
+          justifyContent={"space-between"}
           backdropFilter={"blur(10px)"}
           rounded={"full"}
           gap={{ lg: 3, xl: 12 }}
@@ -77,9 +78,9 @@ const MainLayoutDesktop = () => {
               <Image
                 mx={{ lg: 0, xl: 5 }}
                 src="logo.svg"
-                w={"7.5rem"}
+                w={"2.5rem"}
                 transition={"all 0.2s ease-in-out"}
-                _hover={{ w: "7rem", transformOrigin: "center" }}
+                // _hover={{ w: "3rem", transformOrigin: "center" }}
               />
             </Stack>
           </Link>
@@ -146,7 +147,7 @@ const MainLayoutDesktop = () => {
             ))}
           </Stack>
         </Stack>
-      </Stack>
+      </MotionStack>
       <Stack>
         <Outlet />
       </Stack>

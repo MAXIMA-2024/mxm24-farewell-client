@@ -45,9 +45,9 @@ const MaxMoriesPage = () => {
       transformOrigin="center"
       minWidth={realIsMobile ? "100vh" : "100%"}
       minHeight={realIsMobile ? "100vw" : "100vh"}
-      position="absolute"
-      top="0"
-      left="0"
+      // position="absolute"
+      // top="0"
+      // left="0"
     >
       <Stack
         bgImage={"url('/bg/maxmories-bg.png')"}
@@ -64,7 +64,7 @@ const MaxMoriesPage = () => {
           bgImage={"url('maxmories-book.png')"}
           bgSize={"contain"}
           bgRepeat={"no-repeat"}
-          w={{ base: "100%", md: "90%", lg: "75%", xl: "65%" }}
+          w={{ base: "100%", md: "90%", lg: "75%", xl: "80%" }}
           h={"100%"}
           position={"absolute"}
           justify={"space-evenly"}
@@ -72,7 +72,8 @@ const MaxMoriesPage = () => {
           align={"center"}
           direction={"row"}
           p={{ base: 0, md: 5 }}
-          pt={{ base: 5, md: 0 }}
+          px={{ base: 0, md: 8 }}
+          pt={{ base: 10, md: 8 }}
         >
           {/* Kiri */}
           <Stack
