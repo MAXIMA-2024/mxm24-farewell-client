@@ -14,7 +14,7 @@ const MaxMoriesPage = () => {
   // detect if user is using mobile by grabbing current window width
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 1080) {
+      if (window.innerWidth < 1280) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
@@ -76,17 +76,13 @@ const MaxMoriesPage = () => {
           pt={{ base: 10, md: 8 }}
         >
           {/* Kiri */}
-          <Stack
-            pl={{ md: 0, xl: 10 }}
-            align={"center"}
-            fontFamily={"Luthier"}
-            pb={5}
-          >
+          <Stack pl={{ md: 0, xl: 10 }} align={"center"} pb={5}>
             <Heading
               mt={{ base: "1rem", md: "1rem", lg: "1.5rem", xl: "2rem" }}
               mb={{ base: "1rem", md: "1rem", lg: "1.25rem", xl: "1.75rem" }}
               size={["xl", "xl", "xl", "2xl", "3xl"]}
               color={"#661226"}
+              fontFamily={"Luthier"}
             >
               MAXMORIES
             </Heading>
@@ -231,12 +227,13 @@ const MaxMoriesPage = () => {
                 // h={"7.5rem"}
                 // bg={"#F4D6B0"}
                 // p={0}
-                fontFamily={"Luthier"}
               >
-                <Heading color={"#975934"}>
+                <Heading color={"#975934"} fontFamily={"Luthier"}>
                   "Hari ini jadi kenangan, esok jadi cerita,
-                  <Heading size={"3xl"}>MAXMORIES</Heading> menyimpannya
-                  untukmu"
+                  <Heading size={"3xl"} fontFamily={"Luthier"}>
+                    MAXMORIES
+                  </Heading>{" "}
+                  menyimpannya untukmu"
                 </Heading>
               </Stack>
             </Show>

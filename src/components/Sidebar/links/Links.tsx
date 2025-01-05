@@ -1,22 +1,22 @@
-import { Stack, Image, Text, Button } from "@chakra-ui/react";
+import { Stack, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const items = [
   {
     title: "Gallery",
-    icon: "home-icon.png",
-    link: "/home",
+    icon: "/home-icon.png",
+    link: "/gallery/home",
   },
   {
     title: "MAXMORIES",
-    icon: "state-icon.png",
-    link: "/state",
+    icon: "/state-icon.png",
+    link: "/maxmories",
   },
   {
     title: "Movies",
-    icon: "malpun-icon.png",
-    link: "/malpun",
+    icon: "/malpun-icon.png",
+    link: "/movies",
   },
 ];
 
@@ -54,60 +54,6 @@ const Links = ({ closeSidebar }: { closeSidebar: () => void }) => {
                 delay: index * 0.1,
               }}
             >
-              <Button
-                variant="ghost"
-                onClick={(e) => e.preventDefault()}
-                style={{ cursor: "not-allowed" }}
-                css={{
-                  textDecoration: "none",
-                  color: "text.primary",
-                  _hover: { textDecoration: "none" },
-                }}
-              >
-                <Stack direction="row" alignItems="center" gap={6}>
-                  <Image src={item.icon} w="1.25rem" h="1rem" />
-                  <Text fontFamily={"Lexend"} fontWeight={400}>
-                    {item.title}
-                  </Text>
-                </Stack>
-              </Button>
-
-              <Button
-                variant="ghost"
-                onClick={(e) => e.preventDefault()}
-                style={{ cursor: "not-allowed" }}
-                css={{
-                  textDecoration: "none",
-                  color: "text.primary",
-                  _hover: { textDecoration: "none" },
-                }}
-              >
-                <Stack direction="row" alignItems="center" gap={6}>
-                  <Image src={item.icon} w="1.25rem" h="1rem" />
-                  <Text fontFamily={"Lexend"} fontWeight={400}>
-                    {item.title}
-                  </Text>
-                </Stack>
-              </Button>
-
-              <Button
-                variant="ghost"
-                onClick={(e) => e.preventDefault()}
-                style={{ cursor: "not-allowed" }}
-                css={{
-                  textDecoration: "none",
-                  color: "text.primary",
-                  _hover: { textDecoration: "none" },
-                }}
-              >
-                <Stack direction="row" alignItems="center" gap={6}>
-                  <Image src={item.icon} w="1.25rem" h="1rem" />
-                  <Text fontFamily={"Lexend"} fontWeight={400}>
-                    {item.title}
-                  </Text>
-                </Stack>
-              </Button>
-
               <Link to={item.link} onClick={closeSidebar}>
                 <Stack direction="row" alignItems="center" gap={6}>
                   <Image

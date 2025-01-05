@@ -12,6 +12,7 @@
   "dependencies": {
     "@chakra-ui/react": "^3.2.4",
     "@emotion/react": "^11.14.0",
+    "@fontsource-variable/lexend": "^5.1.2",
     "@generouted/react-router": "^1.19.9",
     "@rive-app/react-canvas-lite": "^4.17.5",
     "embla-carousel": "8.5.1",

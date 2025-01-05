@@ -8,18 +8,18 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 const NavBarData = [
   {
     title: "Gallery",
-    icon: "home-icon.png",
-    link: "/home",
+    icon: "/home-icon.png",
+    link: "/gallery/home",
   },
   {
     title: "MAXMORIES",
-    icon: "state-icon.png",
-    link: "/state",
+    icon: "/state-icon.png",
+    link: "/maxmories",
   },
   {
     title: "Movies",
-    icon: "malpun-icon.png",
-    link: "/malpun",
+    icon: "/malpun-icon.png",
+    link: "/movies",
   },
 ];
 
@@ -74,10 +74,11 @@ const MainLayoutDesktop = () => {
         >
           {/* Logo MAXIMA 2024 */}
           <Link to={"/"}>
-            <Stack w={"7.5rem"}>
+            <Stack w={"7.5rem"} direction={"row"} alignItems={"center"}>
               <Image
                 mx={{ lg: 0, xl: 5 }}
-                src="logo.svg"
+                ml={{ lg: 0, xl: 14 }}
+                src="/logo.svg"
                 w={"2.5rem"}
                 transition={"all 0.2s ease-in-out"}
                 // _hover={{ w: "3rem", transformOrigin: "center" }}
@@ -109,7 +110,7 @@ const MainLayoutDesktop = () => {
               >
                 <Link to={item.link}>
                   <Button
-                    variant={"ghost"}
+                    variant={"plain"}
                     gap={2}
                     w={"7.5rem"}
                     p={5}
