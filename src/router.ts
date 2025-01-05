@@ -10,6 +10,7 @@ export type Path =
   | `/gallery/state`
   | `/maxmories`
   | `/movies`
+  | `/navigation-test`
 
 export type Params = {
   
