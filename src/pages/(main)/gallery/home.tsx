@@ -13,7 +13,6 @@ const HomePage = () => {
 
   return (
     <Stack
-      bgColor={"red"}
       minW={"100vw"}
       minH={"100vh"}
       backgroundImage={[

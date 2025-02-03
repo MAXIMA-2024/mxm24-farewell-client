@@ -80,7 +80,7 @@ const MaxMoriesPage = () => {
             <Heading
               mt={{ base: "1rem", md: "1rem", lg: "1.5rem", xl: "2rem" }}
               mb={{ base: "1rem", md: "1rem", lg: "1.25rem", xl: "1.75rem" }}
-              size={["xl", "xl", "xl", "2xl", "3xl"]}
+              size={["xl", "xl", "xl", "3xl", "3xl"]}
               color={"#661226"}
               fontFamily={"Luthier"}
             >
@@ -122,7 +122,7 @@ const MaxMoriesPage = () => {
             {/* <Show when={isMobile}> */}
             <Stack
               mt={{ base: "1rem", md: "1.25rem", lg: "1.5rem", xl: "2rem" }}
-              w={["10rem", "10rem", "10rem", "13rem", "25rem"]}
+              w={["10rem", "10rem", "10rem", "17rem", "25rem"]}
               // w={"25rem"}
               // h={"7.5rem"}
               bg={"#F4D6B0"}

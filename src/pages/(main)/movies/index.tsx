@@ -26,13 +26,18 @@ const MoviesPage = () => {
       align={"center"}
       justify={"center"}
     >
-      <Stack pb={["23.5rem", "23.5rem", "5rem", "5rem", "5rem"]}>
+      <Stack
+        pb={["19rem", "12rem", "5rem", "5rem", "5rem"]}
+        w={"full"}
+        h={"full"}
+        justify={"center"}
+        align={"center"}
+      >
         <iframe
-          width={isMobile ? "325" : "800"}
-          height={isMobile ? "185" : "500"}
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=6jU6ZG2f8GcsktN-"
+          width={isMobile ? "76%" : "65%"}
+          height={isMobile ? "175px" : "65%"}
+          src="https://www.youtube.com/embed/iscrtXGhVII?si=6jU6ZG2f8GcsktN-"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
